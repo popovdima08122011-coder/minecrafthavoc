@@ -1,4 +1,9 @@
-function copyIP() {
-    navigator.clipboard.writeText("play.myserver.ru");
-    alert("IP скопирован!");
-}
+/* Плавная прокрутка при переходе по ссылкам */
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});

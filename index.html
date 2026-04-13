@@ -1,47 +1,54 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Minecraft Server</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Havoc</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header>
+    <div class="container">
+        <h1 class="main-title">Welcome to Minecraft Havoc</h1>
+        <p class="sub-title">Join the Best Minecraft Experience</p>
+        <a href="#about" class="btn-primary">Learn More</a>
+    </div>
+</header>
 
-<div class="overlay">
+<section id="about" class="section">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>We provide you with the best client for a comfortable gaming experience.</p>
+        <img src="your-image.jpg" alt="Minecraft Image" class="section-img" />
+    </div>
+</section>
 
-    <header>
-        <h1>🟩 Minecraft Server</h1>
-        <nav>
-            <a href="index.html">Главная</a>
-            <a href="rules.html">Правила</a>
-            <a href="donate.html">Донат</a>
-        </nav>
-    </header>
-
-    <main>
-        <h2>Добро пожаловать!</h2>
-
-        <div class="ip">play.myserver.ru</div>
-        <button onclick="copyIP()">Скопировать IP</button>
-
-        <div class="cards">
-            <div class="card">
-                <img src="https://i.imgur.com/6Iej2c3.png">
-                <p>Выживание</p>
-            </div>
-            <div class="card">
-                <img src="https://i.imgur.com/fHyEMsl.png">
-                <p>PVP</p>
-            </div>
-            <div class="card">
-                <img src="https://i.imgur.com/VYy3xQx.png">
-                <p>Донат</p>
-            </div>
+<section id="advantages" class="section">
+    <div class="container">
+        <h2>Our Advantages</h2>
+        <div class="advantage-item">
+            <h3>Performance</h3>
+            <p>Optimized for smooth gameplay.</p>
         </div>
+        <div class="advantage-item">
+            <h3>Customizability</h3>
+            <p>Customize your experience as you like!</p>
+        </div>
+    </div>
+</section>
 
-    </main>
+<section id="video-review" class="section">
+    <div class="container">
+        <h2>Video Review</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" title="Video Review"></iframe>
+    </div>
+</section>
 
-</div>
+<footer>
+    <div class="container">
+        <p>© 2026 Minecraft Havoc. All rights reserved.</p>
+    </div>
+</footer>
 
 <script src="script.js"></script>
 </body>
